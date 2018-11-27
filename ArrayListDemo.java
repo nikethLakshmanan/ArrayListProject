@@ -7,8 +7,9 @@ public class ArrayListDemo{
 			list1.add(i);
 			list2.add(i);
 		}
+		combineList(list1,list2);
 	}
-	public ArrayList<Integer> combineList(ArrayList<Integer> list1, ArrayList<Integer> list2){
+	public static ArrayList<Integer> combineList(ArrayList<Integer> list1, ArrayList<Integer> list2){
 		ArrayList<Integer> newList= new ArrayList<>();
 		for(int i=0; i<list1.size(); i++){
 			newList.add(list1.get(i));
@@ -16,6 +17,7 @@ public class ArrayListDemo{
 		for(int i=0; i<list2.size(); i++){
 			newList.add(list2.get(i));
 		}
+		System.out.println(newList);
 		return newList;
 	}
 }
