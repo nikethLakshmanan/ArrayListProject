@@ -7,7 +7,7 @@ public class ArrayListDemo{
 			list1.add(i);
 			list2.add(i);
 		}
-		combineList(list1,list2);
+		combineList(list1, list2);
 	}
 	public static ArrayList<Integer> combineList(ArrayList<Integer> list1, ArrayList<Integer> list2){
 		ArrayList<Integer> newList= new ArrayList<>();
@@ -17,7 +17,13 @@ public class ArrayListDemo{
 		for(int i=0; i<list2.size(); i++){
 			newList.add(list2.get(i));
 		}
-		System.out.println(newList);
+		printList(newList);
 		return newList;
+	}
+	public static ArrayList<Integer> printList(ArrayList<Integer> list){
+		for(int i = 0; i<list.size(); i++){
+			System.out.print(list.get(i) + ", ");
+		}
+		return list;
 	}
 }
